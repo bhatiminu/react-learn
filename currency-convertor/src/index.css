@@ -1,0 +1,59 @@
+
+.currency-card-wrap {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 24px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-currency form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.currency-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.swap-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.swap-btn {
+  background-color: #2563eb; /* Tailwind's blue-600 */
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 6px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.swap-btn:hover {
+  background-color: #1d4ed8; /* Tailwind's blue-700 */
+}
+
+.convert-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.convert-button:hover {
+  background-color: #1d4ed8;
+}

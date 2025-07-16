@@ -1,0 +1,96 @@
+/* General Layout */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.header__nav {
+  padding: 0.625rem 1rem;
+}
+
+.header__container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.header__logo-image {
+  height: 3rem;
+  margin-right: 0.75rem;
+}
+
+/* Auth Buttons */
+.header__auth {
+  display: flex;
+  align-items: center;
+  order: 2;
+}
+
+.header__login {
+  color: #1f2937;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.header__login:hover {
+  background-color: #f9fafb;
+}
+
+.header__button {
+  background-color: #c2410c;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.header__button:hover {
+  background-color: #9a3412;
+}
+
+/* Menu Items */
+.header__menu {
+  display: flex;
+  flex-grow: 1;
+  order: 1;
+  justify-content: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.header__menu-item {
+  text-decoration: none;
+  color: #374151;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.header__menu-item:hover {
+  color: #c2410c;
+}
+
+/* Active */
+.header__menu-item--active {
+  color: #c2410c;
+}

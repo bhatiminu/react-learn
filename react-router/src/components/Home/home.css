@@ -1,0 +1,142 @@
+.download {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.download__section {
+  position: relative;
+  overflow: hidden;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 2.5rem 0 5rem;
+  margin: 5rem 0 0;
+}
+
+@media (min-width: 640px) {
+  .download__section {
+    margin: 0 4rem;
+    padding: 4rem 0;
+  }
+}
+
+.download__content {
+  position: relative;
+  z-index: 10;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 5rem;
+}
+
+@media (min-width: 640px) {
+  .download__content {
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .download__content {
+    padding: 6rem 2rem;
+  }
+}
+
+.download__text-block {
+  max-width: 36rem;
+  text-align: center;
+  margin: 20rem auto 0;
+}
+
+@media (min-width: 640px) {
+  .download__text-block {
+    margin-top: 0.25rem;
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.download__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .download__title {
+    font-size: 3rem;
+  }
+}
+
+.download__subtitle {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .download__subtitle {
+    display: block;
+    font-size: 2.25rem;
+  }
+}
+
+.download__button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background-color: #c2410c;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.download__button:hover {
+  opacity: 0.75;
+}
+
+.download__image-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .download__image-wrap {
+    margin-top: 5rem;
+    padding-top: 0.25rem;
+  }
+}
+
+.download__image-main {
+  width: 24rem;
+}
+
+.download__secondary-image-wrap {
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+}
+
+.download__image-secondary {
+  width: 12rem;
+}
+
+@media (min-width: 640px) {
+  .download__image-secondary {
+    width: 24rem;
+  }
+}
+
+.download__headline {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2.5rem 0;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .download__headline {
+    font-size: 3rem;
+  }
+}
