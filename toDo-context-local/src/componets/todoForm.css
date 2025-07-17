@@ -1,0 +1,106 @@
+.todo-form {
+  display: flex;
+}
+
+.todo-form__input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding: 0.375rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.todo-form__input:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.todo-form__button {
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 0.25rem 0.75rem;
+  background-color: #16a34a; /* green-600 */
+  color: white;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-form__button:hover {
+  background-color: #15803d; /* green-700 */
+}
+
+
+/* item css */
+.todo-item {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* border-black/10 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.375rem 0.75rem; /* py-1.5 px-3 */
+  gap: 0.75rem; /* gap-x-3 */
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); /* shadow-sm shadow-white/50 */
+  transition-duration: 300ms;
+  color: black;
+}
+
+.todo-item--completed {
+  background-color: #c6e9a7;
+}
+
+.todo-item--pending {
+  background-color: #ccbed7;
+}
+
+.todo-item__checkbox {
+  cursor: pointer;
+    appearance: auto; /* ← allows browser to render default checkbox */
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.todo-item__text {
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+}
+
+/* When editing */
+.todo-item__text--editable {
+  border-color: rgba(0, 0, 0, 0.1); /* border-black/10 */
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* When completed */
+.todo-item__text--done {
+  text-decoration: line-through;
+}
+
+.todo-item__edit-btn,
+.todo-item__delete-btn {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem; /* text-sm */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb; /* bg-gray-50 */
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.todo-item__edit-btn:hover,
+.todo-item__delete-btn:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+}
+
+.todo-item__edit-btn:disabled {
+  opacity: 0.5; /* disabled:opacity-50 */
+  pointer-events: none;
+}
