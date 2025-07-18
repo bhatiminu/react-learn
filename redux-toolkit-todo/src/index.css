@@ -1,0 +1,49 @@
+/* todo.css */
+
+.todo__heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.todo__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #27272a; /* zinc-800 */
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.todo__text {
+  color: white;
+  font-size: 16px;
+}
+
+.todo__delete-btn {
+  background-color: #ef4444; /* red-500 */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo__delete-btn:hover {
+  background-color: #dc2626; /* red-600 */
+}
+
+.todo__delete-icon {
+  width: 24px;
+  height: 24px;
+}
